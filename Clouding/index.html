@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VxCloud - Almacenamiento en la Nube</title>
+    <link rel="icon" href="https://rexstatic.neocities.org/RexCloud/Logo.png" type="image/x-icon">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap y Popper.js (para tooltips y popovers) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Estilos CSS internos -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: linear-gradient(to bottom, #E6F3FF, #FFFFFF);
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: #2563EB;
+            color: #fff;
+            padding: 2rem 0;
+        }
+        .header h1 {
+            color: #FFFFFF;
+            font-size: 2.5rem;
+        }
+        .card {
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .features {
+            padding: 50px 0;
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 3em;
+            margin-bottom: 20px;
+            color: #2563EB;
+        }
+        .pricing {
+            background-color: #FFFFFF;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .pricing-table {
+            border: 1px solid #E5E7EB;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .pricing-table h3 {
+            color: #2563EB;
+        }
+        .pricing-table .price {
+            font-size: 2em;
+            margin-bottom: 20px;
+            color: #10B981;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #2563EB;
+            color: #FFFFFF;
+            padding: 0.75rem 1rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #1D4ED8;
+        }
+        .contact {
+            background-color: #2563EB;
+            color: #FFFFFF;
+            padding: 50px 0;
+            text-align: center;
+        }
+        footer {
+            background-color: #1F2937;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <h1>VxCloud</h1>
+        <p>Libertad para tu información</p>
+        <a href="#pricing" class="btn btn-light">Explorar VxCloud Services</a>
+    </header>
+    
+    <!-- Sección de Características -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>¿Por qué elegir VxCloud?</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <i class="fas fa-lock feature-icon"></i>
+                    <h3>Almacenamiento seguro y cifrado</h3>
+                    <p>Tus archivos están protegidos con los más altos estándares de seguridad.</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="fas fa-mobile-alt feature-icon"></i>
+                    <h3>Acceso desde cualquier dispositivo</h3>
+                    <p>Accede a tus archivos desde cualquier lugar y dispositivo.</p>
+                </div>
+                <div class="col-lg-4">
+                    <i class="fas fa-sync feature-icon"></i>
+                    <h3>Sincronización automática</h3>
+                    <p>Tus archivos se sincronizan automáticamente para que siempre estén actualizados.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <h2>Nuestros Planes VxCloud</h2>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Básico</h3>
+                        <div class="price">$1.17/mes</div>
+                        <ul>
+                            <li>1GB de almacenamiento</li>
+                            <li>Acceso desde un dispositivo</li>
+                            <li>Soporte estándar</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=1" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Estándar</h3>
+                        <div class="price">$2.33/mes</div>
+                        <ul>
+                            <li>2.5GB de almacenamiento</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte premium</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=2" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Premium</h3>
+                        <div class="price">$4.66/mes</div>
+                        <ul>
+                            <li>5GB de almacenamiento</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte 24/7</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=3" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Elite</h3>
+                        <div class="price">$9.33/mes</div>
+                        <ul>
+                            <li>10GB de almacenamiento</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte prioritario</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=4" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Deluxe</h3>
+                        <div class="price">$23.31/mes</div>
+                        <ul>
+                            <li>16GB de almacenamiento</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte dedicado</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=5" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Business</h3>
+                        <div class="price">$43.63/mes</div>
+                        <ul>
+                            <li>30GB de almacenamiento</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte empresarial</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=6" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="pricing-table">
+                        <h3>Plan Enterprise</h3>
+                        <div class="price">$93.26/mes</div>
+                        <ul>
+                            <li>Almacenamiento Infinito</li>
+                            <li>Acceso desde múltiples dispositivos</li>
+                            <li>Soporte dedicado 24/7</li>
+                        </ul>
+                        <a href="https://vxgroup.neocities.org/VxCloud/SRC/@Components/@Plans?pdm=7" class="btn">Seleccionar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de Contacto -->
+    <section class="contact">
+        <div class="container">
+            <h2>¡Contáctanos!</h2>
+            <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+            <a href="mailto:rexcloudsv@gmail.com" class="btn btn-light">Contactar</a>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>2024 &copy;VxCloud Todos los derechos reservados | Powered by &copy;VxGroup | Protected by &copy;Votrox</p>
+        </div>
+        <script src="/Scripts/redirect.js"></script>
+    </footer>
+</body>
+                                                                                                 </html>
